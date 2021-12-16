@@ -12,7 +12,6 @@ const NUMBER_OF_TOPICS = 10; // If this is more than 6, then there will be **les
     const topics = [];
     for (let i = 0; i < NUMBER_OF_TOPICS; i++) {
         await ipfs.pubsub.subscribe(`test-topic-${i}`);
-        await delay()
         topics.push(`test-topic-${i}`);
     }
 
@@ -32,10 +31,12 @@ const NUMBER_OF_TOPICS = 10; // If this is more than 6, then there will be **les
     } else if (pubsubTopics.length == topics.length) {
         console.log("There are the same number of pubsub topics as the ones we opened! :)")
     } else {
-        // THIS WON'T EVER HAPPEN IF THIS IS THE IPFS NODE IS FRESH
+        // THIS WON'T EVER HAPPEN IF THE IPFS NODE IS FRESH
         console.log("There are more pubsub topics than the ones we opened! :( You might need to restart your IPFS node.")
     }
 })();
+
+await delay()
 
 async function delay() {
     return new Promise((resolve) => {

@@ -39,7 +39,7 @@ fs.rmdirSync('./orbitdb', { recursive: true });
     } else if (pubsubTopics.length == databases.length) {
         console.log("There are the same number of pubsub topics as databases! :)")
     } else {
-        // THIS WON'T EVER HAPPEN IF THIS IS THE IPFS NODE IS FRESH
+        // THIS WON'T EVER HAPPEN IF THE IPFS NODE IS FRESH
         console.log("There are more pubsub topics than databases! :( You might need to restart your IPFS node.")
     }
 })();
