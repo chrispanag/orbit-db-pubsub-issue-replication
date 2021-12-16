@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "yarn node ./index.js"
-  },
   "dependencies": {
     "orbit-db": "^0.28.0",
     "ipfs-http-client": "^55.0.0"
