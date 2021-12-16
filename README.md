@@ -1,12 +1,12 @@
-# OrbitDB Pubsub Issue Replication
+# Pubsub Issue Replication
 
-This repository contains code to replicate the following issue with OrbitDB. Whenever more than 6 orbitdb databases are created/opened, the number of pubsub topics open are less than the number of databases.
+This repository contains code to replicate the following issue with OrbitDB. Whenever more than 6 orbitdb databases are created/opened, the number of pubsub topics open are less than the number of databases. The bug found has been encountered when using either go-ipfs v0.9.1 or v0.11.0. (it has not been tested with earlier versions or v0.10.0)
 
 ## How to run
 
 ### Prerequisites
 
-This code expects a running go-ipfs v0.9.1 daemon with the pubsub experiment enabled on `localhost:5001`.
+This code expects a running go-ipfs v0.11.0 daemon with the pubsub experiment enabled on `localhost:5001`.
 
 You can start it using the following command:
 

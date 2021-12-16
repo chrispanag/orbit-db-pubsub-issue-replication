@@ -40,6 +40,6 @@ fs.rmdirSync('./orbitdb', { recursive: true });
         console.log("There are the same number of pubsub topics as databases! :)")
     } else {
         // THIS WON'T EVER HAPPEN IF THIS IS THE IPFS NODE IS FRESH
-        console.log("There are more pubsub topics than databases! :(")
+        console.log("There are more pubsub topics than databases! :( You might need to restart your IPFS node.")
     }
 })();
