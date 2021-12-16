@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "orbit-db": "^0.28.0",
-    "ipfs-http-client": "^54.0.2"
+    "ipfs-http-client": "^55.0.0"
   }
 }
